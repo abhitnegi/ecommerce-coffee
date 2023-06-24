@@ -1,0 +1,39 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.box{
+   box-sizing: border-box;
+   height: 400px;
+   width: 100%;
+   display: flex;
+
+}
+
+.box .container{
+    display: flex;
+    padding: 35px 50px 50px 50px;
+    flex: 60%;
+    font-size: 20px;
+}
+
+.box .image{
+    display: flex;
+    flex: 40%;
+    width: 100%;
+    height: auto;
+    padding: 20px 35px 20px 20px;
+}
+
+@media only screen and (max-width: 650px){
+    .box .container{
+        font-size: 13px;
+    }
+
+    p{
+        position: relative;
+        bottom: 20px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,169 @@
+.navbar{
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar .left{
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar .right{
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.button{
+    display: none;
+}
+
+.right button{
+    border: none;
+    width: 80px;
+    font-size: larger;
+    margin-right: 5px;
+    color: white;
+    background-color: black;
+}
+
+.right .user{
+    border: none;
+    width: 6vw;
+    font-size: larger;
+    margin-right: 5px;
+    margin-top: 3px;
+    color: white;
+    background-color: black;
+}
+
+.right button:hover{
+    cursor: pointer;
+}
+
+.navbar .right .drop .dropdown{
+    display: none;
+    position: absolute;
+    width: 120px;
+    padding-top: 5px;
+    text-align: center;
+    z-index: 1;
+    list-style: none;
+}
+
+.navbar .right .drop .dropdown button{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.navbar .right .drop .dropdown button:hover{
+    cursor: pointer;
+}
+
+.navbar .right .drop:hover .dropdown{
+    display: block;
+}
+
+@media only screen and (max-width: 850px){
+    a{
+        font-size: 15px;
+    }
+
+    .navbar .right{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .navbar .left button{
+        display: flex;
+        margin-left: 12px;
+    }
+
+    .navbar .left .links{
+        display: none;
+    }
+
+    .navbar .left #hidden{
+        display: flex;
+        position: absolute; 
+        left: 0px;
+        top: 49px;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .navbar .right{
+        font-size: 12px;
+    }
+
+    .navbar .right .drop button{
+        width: 20vw;
+    }
+
+    .navbar .right .drop .dropdown{
+        display: none;
+        position: absolute;
+        width: 20vw;
+        padding-top: 5px;
+        text-align: center;
+        z-index: 1;
+        list-style: none;
+        border-color: black;
+    }
+
+    .navbar .right .drop .dropdown button{
+        height: 20px;
+        border: 1px solid black;
+    }
+
+    .navbar{
+        height: 7vh;
+    }
+}
+
+
+.searchbar{
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar input{
+    border-left : none;
+    border-right: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 4vh;
+    width: 62vw;
+    padding-left: 20px;
+    font-size: 19px;
+}
+
+.searchbar .search{
+    height: 4.2vh;
+    width: 4vw;
+}
+
+.search{
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+}
