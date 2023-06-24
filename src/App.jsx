@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <ShopContextProvider>
-    <Router>
+    <Router basename="/ecommerce-coffee">
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
