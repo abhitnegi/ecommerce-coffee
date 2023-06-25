@@ -1,45 +1,53 @@
+h1{
+    text-align: center;
+    padding: 19px;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.table-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer{
-    margin-top: 15px;
-    height: 32vh;
-    width: 100%;
     background-color: black;
     color: white;
 }
 
-.footer h1{
-    padding-top: 19px;
-    width: 100%;
-    text-align: center;
+h3{
+    margin: 15px;
 }
 
-.table{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+h4{
+    margin: 15px;
 }
 
-.table th{
-    padding: 10px 50px 20px 50px;
-    text-align: center;
-
+@media only screen and (max-width: 1200px){
+    .footer{
+        font-size: 12px;
+    }
 }
 
-.table td{
-    height: 60px;
-    text-align: center;
+@media only screen and (max-width: 992px){
+    .footer{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .footer{
+        font-size: 8px;
+    }
 }
 
 @media only screen and (max-width: 650px){
-    th,td{
-        font-size: 11px;
-    }
-
-    h1{
-        font-size: 20px;
-    }
-
     .footer{
-        height: auto;
+        font-size: 6px;
+        margin-top: 20px;
     }
 }

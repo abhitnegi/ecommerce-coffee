@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { ShopContext } from '../../shop-context'
@@ -8,9 +8,11 @@ import { useNavigate } from "react-router-dom"
 import { useAuthState } from "react-firebase-hooks/auth"
 import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 
-export default function Navbar() {
+export default function Navbar(props) {
 
   const [ user ] = useAuthState(auth) 
+
+  const [ searches, setSearches ] = useState("") 
 
   const navigate = useNavigate()
 
@@ -30,9 +32,17 @@ export default function Navbar() {
     navigate("/order")
   }
 
-  const search = () => {
-    alert("Search bar ka code likhna hai abhi.....") 
-  }
+  
+  const search = (e) => {
+    e.preventDefault();
+    if(searches === ""){
+      alert("Search Bar Empty")
+        // navigate("/")
+     }
+    else{navigate('/search')
+    setSearches("")
+    props.getData(searches)}
+    } 
   
   return (
     <>
@@ -46,7 +56,7 @@ export default function Navbar() {
         <button className='button' onClick={() => {setshowLinks(!showLinks)}}><DensitySmallIcon /></button>
       </div>
       <div className="searchbar">
-        <input type="text" placeholder='Search....'/>
+        <input type="text" placeholder='Search....' value={searches} onChange={(e) => setSearches(e.target.value)}/>
         <button className='search' onClick={search}>Search</button>
       </div>
       <div className="right">

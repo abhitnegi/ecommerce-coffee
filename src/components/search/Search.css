@@ -1,0 +1,18 @@
+.search-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.empty{
+    height: 20vh;
+}

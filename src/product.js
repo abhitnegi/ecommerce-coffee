@@ -7,7 +7,7 @@ import picture8 from './components/assets/7th.jpg'
 
 export const PRODUCT = [{
     id: 1,
-    title: "Black Coffee",
+    title: "Black coffee",
     price: 90,
     productImage: picture3
 },{
