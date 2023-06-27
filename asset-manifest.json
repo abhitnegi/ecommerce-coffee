@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ecommerce-coffee/static/css/main.eb2abdd1.css",
-    "main.js": "/ecommerce-coffee/static/js/main.1bcd1919.js",
+    "main.css": "/ecommerce-coffee/static/css/main.a97a6cb1.css",
+    "main.js": "/ecommerce-coffee/static/js/main.7783145d.js",
     "static/media/1st.jpg": "/ecommerce-coffee/static/media/1st.14021c9374f501dcacf7.jpg",
     "index.html": "/ecommerce-coffee/index.html",
-    "main.eb2abdd1.css.map": "/ecommerce-coffee/static/css/main.eb2abdd1.css.map",
-    "main.1bcd1919.js.map": "/ecommerce-coffee/static/js/main.1bcd1919.js.map"
+    "main.a97a6cb1.css.map": "/ecommerce-coffee/static/css/main.a97a6cb1.css.map",
+    "main.7783145d.js.map": "/ecommerce-coffee/static/js/main.7783145d.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb2abdd1.css",
-    "static/js/main.1bcd1919.js"
+    "static/css/main.a97a6cb1.css",
+    "static/js/main.7783145d.js"
   ]
 }
