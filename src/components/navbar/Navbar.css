@@ -35,6 +35,7 @@ a{
     width: 80px;
     font-size: larger;
     margin-right: 5px;
+    padding: 0px;
     color: white;
     background-color: black;
 }
@@ -67,6 +68,7 @@ a{
     background-color: white;
     color: black;
     border: 2px solid black;
+    margin-right: 20px;
 }
 
 .navbar .right .drop .dropdown button:hover{
@@ -75,69 +77,6 @@ a{
 
 .navbar .right .drop:hover .dropdown{
     display: block;
-}
-
-@media only screen and (max-width: 850px){
-    a{
-        font-size: 15px;
-    }
-
-    .navbar .right{
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    .navbar .left button{
-        display: flex;
-        margin-left: 12px;
-    }
-
-    .navbar .left .links{
-        display: none;
-    }
-
-    .navbar .left #hidden{
-        display: flex;
-        position: absolute; 
-        left: 0px;
-        top: 49px;
-        height: 200px;
-        width: 100%;
-        background-color: black;
-        flex-direction: column;
-        justify-content: center;
-        z-index: 1;
-        align-items: center;
-    }
-
-    .navbar .right{
-        font-size: 12px;
-    }
-
-    .navbar .right .drop button{
-        width: 20vw;
-    }
-
-    .navbar .right .drop .dropdown{
-        display: none;
-        position: absolute;
-        width: 20vw;
-        padding-top: 5px;
-        text-align: center;
-        z-index: 1;
-        list-style: none;
-        border-color: black;
-    }
-
-    .navbar .right .drop .dropdown button{
-        height: 20px;
-        border: 1px solid black;
-    }
-
-    .navbar{
-        height: 7vh;
-    }
 }
 
 
@@ -152,18 +91,168 @@ a{
     border-right: none;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    height: 4vh;
-    width: 62vw;
+    height: 3.9vh;
+    width: 60vw;
     padding-left: 20px;
     font-size: 19px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .searchbar .search{
-    height: 4.2vh;
+    height: 4.4vh;
     width: 4vw;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .search{
     border-radius: 0px 5px 5px 0px;
     border: 1px solid black;
+}
+
+#hello{
+    background: none;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    a{
+        font-size: 15px;
+    }
+
+    .navbar .right{
+        font-size: 14px;
+    }
+
+    .searchbar input{
+        width: 40vw;
+    }
+
+    .navbar .right .drop .dropdown button{
+        position: absolute;
+        right: 50px;
+    }
+
+    .searchbar .search{
+        width: 7vw;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    a{
+        font-size: 15px;
+    }
+
+    .navbar .right{
+        font-size: 14px;
+    }
+
+    .searchbar input{
+        width: 40vw;
+    }
+
+    .navbar .right .drop .dropdown button{
+        position: absolute;
+        right: 50px;
+    }
+
+    .searchbar .search{
+        width: 7vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    a{
+        font-size: 15px;
+    }
+
+    .navbar .right{
+        font-size: 14px;
+    }
+
+    .searchbar input{
+        width: 40vw;
+    }
+
+    .navbar .right .drop .dropdown button{
+        position: absolute;
+        right: 50px;
+    }
+
+    .searchbar .search{
+        width: 7vw;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .searchbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .searchbar input{
+        width: 30vw;
+        height: 3.2vh;
+        font-size: 16px;
+    }
+
+    .searchbar .search{
+        height: 3.7vh;
+        width: 10vw;
+        font-size: 10px;
+    }
+
+    .navbar .left button{
+        display: flex;
+        margin-left: 12px;
+    }
+
+    .navbar .left .links{
+        display: none;
+    }
+
+    .navbar .left #hidden{
+        display: flex;
+        position: absolute; 
+        left: 0px;
+        top: 46px;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .navbar .right .drop button{
+        width: 10vw;
+    }
+
+    .navbar .right .drop .dropdown{
+        display: none;
+        position: absolute;
+        width: 20vw;
+        padding-top: 5px;
+        text-align: center;
+        z-index: 1;
+        list-style: none;
+        border-color: black;
+    }
+
+    .navbar .right .drop .dropdown button{
+        height: 40px;
+        position: absolute;
+        left: 5px;
+        border: 1px solid black;
+    }
+
+    .navbar{
+        height: 7vh;
+        width: 100vw;
+    }
+
+    .navbar .right .user{
+        margin-right: 28px;
+    }
 }

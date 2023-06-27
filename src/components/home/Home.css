@@ -14,13 +14,13 @@ img{
 .box .container{
     display: flex;
     padding: 35px 50px 50px 50px;
-    flex: 60%;
+    flex: 55%;
     font-size: 20px;
 }
 
 .box .image{
     display: flex;
-    flex: 40%;
+    flex: 45%;
     width: 100%;
     height: auto;
     padding: 20px 35px 20px 20px;
@@ -45,13 +45,21 @@ img{
 }
 
 @media only screen and (max-width: 650px){
+    .box{
+        display: flex;
+    }
+
+    .box .image{
+        height: 45vh;
+        padding: 20px 20px 20px 0px;
+        
+    }
+
     .box .container{
-        font-size: 12px;
+        padding: 35px 20px 50px 20px;
     }
 
     p{
-        position: relative;
-        bottom: 20px;
-        font-size: 12px;
+        font-size: 11.9px;
     }
 }

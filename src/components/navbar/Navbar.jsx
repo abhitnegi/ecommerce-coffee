@@ -7,6 +7,7 @@ import { signInWithPopup, signOut } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
 import { useAuthState } from "react-firebase-hooks/auth"
 import DensitySmallIcon from '@mui/icons-material/DensitySmall';
+import { ShoppingCart,  MagnifyingGlass } from "phosphor-react"
 
 export default function Navbar(props) {
 
@@ -57,10 +58,10 @@ export default function Navbar(props) {
       </div>
       <div className="searchbar">
         <input type="text" placeholder='Search....' value={searches} onChange={(e) => setSearches(e.target.value)}/>
-        <button className='search' onClick={search}>Search</button>
+        <button className='search' onClick={search}><MagnifyingGlass size={20}/></button>
       </div>
       <div className="right">
-        {view && <Link to='/cart'>Cart</Link>}
+        {view && <Link to='/cart'><ShoppingCart size={25} className='cart-icon'/></Link>}
         {!view ? <><button onClick={(e) => {login(e)}}>Log in</button></> : <div className='drop'>
         <button className='user'>{user?.displayName}</button>
         <div className="dropdown">
